@@ -8,20 +8,13 @@
             $('html, body').toggleClass('noscroll');
         });
 
-        // Hipster Ipsum
-        $('#content').html('');
-        getHipsterParagraph();
-        getHipsterParagraph();
-
-    });
-
-    function getHipsterParagraph() {
+        // Bacon Ipsum
         $.ajax({
-            url: 'http://hipsterjesus.com/api/',
+            url: 'https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem=1&format=html',
             success: function(data) {
-                $('#content').append($('<p></p>').html(data.text))
+                $('#content').html(data);
             }
         });
-    }
 
+    });
 })(jQuery);
