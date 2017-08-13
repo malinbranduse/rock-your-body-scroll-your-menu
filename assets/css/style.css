@@ -69,6 +69,7 @@ path {
     top: 0;
     left: 0;
     height: 80px;
+    z-index: 9999;
     background: #d2f1ed; }
 
     .header .wrapper {
@@ -167,6 +168,10 @@ path {
 
 .content {
     padding: 50px 20px;
+}
+
+#content {
+    opacity: 0.7;
 }
 
 .details {
