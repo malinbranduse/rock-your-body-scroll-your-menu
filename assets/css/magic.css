@@ -1,14 +1,51 @@
-.menu {
-    margin: 10px;
-}
 
-.menu a {
-    display: block;
-    padding: 5px 10px;
-    box-shadow: none;
+@media (max-width: 900px) {
+    html.noscroll {
+        overflow: hidden;
+    }
+
+    body.noscroll {
+        overflow: visible;
+        height: 100%;
+    }
+
+    .logo, .hamburger__container {
+        position: relative;
+        z-index: 9999;
+        background: rgba(210,241,237, 0.3);
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: #d2f1ed;
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
+
+    .open {
+        opacity: 1;
+        right: 0;
+    }
+
+    .nav__container {
+        position: absolute;
+        padding: 80px 20px 30px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* These 2 below are all the magic: */
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
 
 @media (min-width: 900px) {
+
     .menu {
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -17,13 +54,7 @@
         -ms-align-items: center;
         align-items: center;
     }
-}
 
-.menu-item {
-    list-style: none;
-}
-
-@media (min-width: 900px) {
     .mobile {
         display: none;
     }
