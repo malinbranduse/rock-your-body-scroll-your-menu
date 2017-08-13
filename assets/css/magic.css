@@ -1,0 +1,30 @@
+.menu {
+    margin: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 5px 10px;
+    box-shadow: none;
+}
+
+@media (min-width: 900px) {
+    .menu {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+    }
+}
+
+.menu-item {
+    list-style: none;
+}
+
+@media (min-width: 900px) {
+    .mobile {
+        display: none;
+    }
+}

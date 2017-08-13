@@ -23,23 +23,96 @@
     <meta name="twitter:description" content="Demo of how to fix the problem of scrolling a fullscreen menu on touch devices without scrolling the body">
     <meta name="twitter:site" content="https://malinushj.github.io/rock-your-body-scroll-your-menu/">
 
-    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="public">
+    <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- This is where all the magic happens -->
+    <link rel="stylesheet" href="assets/css/magic.css">
+
 </head>
 <body id="body">
 
-<header>
+<header class="header">
+    <div class="wrapper cf">
+
+        <div class="logo">Logo</div>
+
+        <nav class="nav">
+            <div class="nav__container">
+
+                <ul class="menu cf">
+                    <li class="menu-item"><a href="#">Menu Item 1</a></li>
+                    <li class="menu-item"><a href="#">Menu Item 2</a></li>
+                    <li class="menu-item"><a href="#">Menu Item 3</a></li>
+                    <li class="menu-item"><a href="#">Menu Item 4</a></li>
+                    <li class="menu-item"><a href="#">Menu Item 5</a></li>
+                    <li class="menu-item"><a href="#">Menu Item 6</a></li>
+                </ul>
+
+                <div class="mobile">
+                    <p>Some more content to make this menu huge</p>
+                    <p>Praesent arcu quam, maximus at ante sed, tincidunt accumsan nisi. In blandit et elit suscipit laoreet. Sed sed arcu ultricies leo commodo egestas eget quis arcu. Mauris nulla lectus, tincidunt eu aliquam commodo, ornare id turpis. Etiam elementum quam eu ante gravida, vitae pellentesque tellus ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat rhoncus neque eu maximus. Donec tincidunt facilisis augue, in vestibulum metus elementum pulvinar.</p>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <button class="hamburger mobile">
+            <div class="hamburger__container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </div>
+
 
 </header>
 
-<div id="content">
-    test
-</div>
+<section class="content wrapper">
 
-<footer></footer>
+    <h1>Rock your <span class="code">body</span>, scroll your <span class="code">menu</span></h1>
 
-<script type="text/javascript" src="index.js"></script>
+    <h2>is a demo for <a href="https://malin.codes/how-to-make-a-scrollable-menu-without-scrolling-the-body/" target="_blank">How to make a scrollable menu without scrolling the body</a></h2>
+
+    <p>
+        This simple page has the purpose to illustrate a possible solution to making a scrollable menu without scrolling the body of a page on touch devices 
+    </p>
+    
+    <p>
+        You can find the repo of this page here <a href="https://github.com/malinushj/rock-your-body-scroll-your-menu">rock-your-body-scroll-your-menu</a>
+    </p>
+
+    <p>
+        More details about the implementation in this article: <a href="https://malin.codes/how-to-make-a-scrollable-menu-without-scrolling-the-body/" target="_blank">How to make a scrollable menu without scrolling the body</a>
+    </p>
+
+    <span class="details">Content below provided by <a href="http://hipsterjesus.com/" target="_blank">HipsterJesus - A Hipster Ipsum API</a></span>
+
+    <div id="content">
+        <p>Jianbing glossier affogato, art party chartreuse selvage lo-fi live-edge gochujang artisan. VHS wayfarers pop-up, scenester gluten-free brooklyn sriracha fashion axe skateboard heirloom banh mi. Sriracha snackwave everyday carry scenester bushwick pabst. Quinoa aesthetic palo santo leggings activated charcoal. Chillwave direct trade green juice, blue bottle woke prism pok pok banh mi. Disrupt craft beer yuccie pabst, forage palo santo ethical keytar kogi artisan hoodie street art cronut. Kale chips migas food truck, street art fashion axe readymade bespoke chia snackwave. Four dollar toast squid brooklyn, meh chicharrones selfies la croix ugh dreamcatcher pabst echo park hexagon next level seitan umami. Pickled woke poutine enamel pin, cloud bread you probably haven't heard of them thundercats cold-pressed bitters trust fund. Synth tacos keffiyeh freegan aesthetic. Semiotics yuccie butcher hell of PBR&B poke quinoa prism chillwave taxidermy. Craft beer leggings keffiyeh jean shorts health goth venmo listicle retro. Tousled dreamcatcher mumblecore, selfies waistcoat tattooed sartorial you probably haven't heard of them humblebrag drinking vinegar kombucha vexillologist.</p>
+        <p>Coloring book unicorn locavore, umami leggings synth schlitz bitters letterpress. Pinterest kombucha hella cold-pressed poke PBR&B venmo chambray church-key chicharrones vinyl sriracha kinfolk chartreuse. Direct trade air plant health goth skateboard vaporware pabst you probably haven't heard of them polaroid gastropub man bun vegan keytar blue bottle. Cray cronut beard, lyft tattooed schlitz trust fund mustache vice hexagon lomo humblebrag edison bulb occupy church-key. Raw denim fashion axe kale chips af bespoke raclette chicharrones XOXO chartreuse migas. Forage roof party gochujang stumptown humblebrag, neutra viral narwhal shaman. Small batch mixtape raclette flannel bushwick, air plant tilde skateboard chicharrones pork belly umami. Man bun try-hard lumbersexual four dollar toast retro, fanny pack cornhole coloring book. Celiac cliche kitsch unicorn. Put a bird on it messenger bag venmo actually.</p>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="wrapper">
+        <p>️
+            <svg xmlns="http://www.w3.org/2000/svg" width="522.468" height="401.98" viewBox="0 0 522.468 401.98"><path fill="#424242" d="M221.09 375.5c-2.117 0-4.23-.324-6.288-.96l-14.35-3.938-.208-.063c-5.64-1.73-10.143-5.332-13.02-10.42-2.954-5.22-3.622-11.285-1.88-17.09l86.88-300.702c1.73-5.638 5.335-10.137 10.424-13.01 3.32-1.88 6.883-2.835 10.58-2.835 2.11 0 4.218.32 6.27.954l14.37 3.94.21.063c5.636 1.728 10.135 5.33 13.01 10.415 2.958 5.23 3.623 11.296 1.882 17.1l-86.883 300.703c-1.726 5.62-5.32 10.11-10.393 12.99-3.353 1.895-6.914 2.85-10.605 2.85zm165.53-43.665c-5.95 0-11.387-2.288-15.725-6.616l-11.645-11.646c-4.334-4.33-6.625-9.773-6.625-15.737 0-5.874 2.353-11.46 6.626-15.733l81.116-81.117-81.118-81.116c-4.333-4.33-6.623-9.77-6.623-15.733 0-5.96 2.29-11.402 6.625-15.735l11.633-11.637c4.363-4.345 9.797-6.63 15.738-6.63 5.872 0 11.46 2.355 15.735 6.632L510.842 185.25c4.27 4.27 6.626 9.858 6.626 15.735 0 5.877-2.354 11.467-6.63 15.74L402.353 325.208c-4.266 4.27-9.855 6.625-15.73 6.625zm-250.772 0c-5.972 0-11.418-2.298-15.75-6.645L11.628 216.72C7.355 212.452 5 206.863 5 200.99c0-5.877 2.355-11.467 6.633-15.74L120.116 76.768c4.276-4.275 9.863-6.63 15.734-6.63 5.872 0 11.46 2.355 15.734 6.63l11.64 11.64c4.274 4.272 6.63 9.86 6.63 15.735 0 5.878-2.357 11.472-6.64 15.746l-81.105 81.1 81.114 81.12c4.273 4.27 6.628 9.858 6.628 15.73 0 5.96-2.292 11.4-6.63 15.737l-11.643 11.637c-4.327 4.327-9.77 6.62-15.732 6.62z"/></svg>
+            with <span class="coffee">☕️</span>️ by
+            <a href="https://malin.codes" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="131" height="24.2" viewBox="0 0 131 24.2"><path fill="#424242" d="M5.4 10.8c.5-1 1.1-1.6 1.9-1.6.6 0 1.1.4 1.1 1.7v8.6h3.8v-8.7c.5-1 1.1-1.6 1.9-1.6.6 0 1.1.4 1.1 1.7v8.6H19v-9.3c0-2.4-1.4-3.8-3.3-3.8-1.6 0-2.8.7-3.8 2-.5-1.3-1.6-2-3-2-1.6 0-2.8.6-3.8 1.8l-.2-1.4H1.6v12.7h3.8v-8.7zm21.4.8c-3.8 0-5.9 1.5-5.9 4.3 0 2.3 1.6 4 4.1 4 1.5 0 2.9-.5 3.8-1.9.6 1.3 1.6 1.7 3.1 1.8l.8-2.5c-.6-.2-.9-.6-.9-1.6v-4.9c0-2.9-1.6-4.5-5.2-4.5-1.4 0-3.2.3-4.8.9l.9 2.5C24 9.3 25.2 9 26 9c1.6 0 2.2.5 2.2 2v.5l-1.4.1zm1.3 4.3c-.5.8-1.1 1.2-2 1.2s-1.5-.6-1.5-1.6c0-1.3.8-1.9 2.6-1.9h.9v2.3zm11 .9c-.4 0-.7-.3-.7-1V1.3l-3.8.4v14.5c0 2.3 1.2 3.6 3.3 3.6.9 0 1.8-.2 2.4-.4l-.7-2.7c0 .1-.3.1-.5.1zm6.6-10.1l-3.8-.3v13h3.8m10.1-8.6v8.6h3.8v-9.3c0-2.4-1.3-3.8-3.5-3.8-1.6 0-2.8.7-3.9 1.9l-.3-1.5h-3.3v12.7h3.8v-8.7c.7-1 1.4-1.6 2.2-1.6.7 0 1.2.4 1.2 1.7zm17.4-1.7c.9 0 1.6.3 2.4.9l1.6-2.3c-1.2-1-2.6-1.6-4.3-1.6-3.8 0-6.2 2.8-6.2 6.9 0 4 2.4 6.6 6.3 6.6 1.7 0 3.1-.6 4.3-1.5l-1.7-2.4c-.8.7-1.5.9-2.4.9-1.5 0-2.5-.9-2.5-3.7-.1-2.7.9-3.8 2.5-3.8zm10.9-2.9c-3.9 0-6.2 2.7-6.2 6.7 0 4.3 2.4 6.8 6.2 6.8 3.9 0 6.2-2.7 6.2-6.7 0-4.3-2.3-6.8-6.2-6.8zm0 10.7c-1.5 0-2.3-1.2-2.3-4 0-2.7.8-4 2.3-4s2.3 1.2 2.3 4-.8 4-2.3 4zm27.7-10.7c-3.8 0-5.9 3-5.9 6.8 0 4 2.2 6.7 6.4 6.7 2.1 0 3.7-.8 4.9-1.8l-1.6-2.1c-1.1.8-2 1.1-3 1.1-1.6 0-2.6-.6-2.9-2.9h7.8c.1-.4.1-1 .1-1.4.1-4-2.2-6.4-5.8-6.4zm2.2 5.5h-4.2c.2-2.2.9-3 2.2-3 1.5 0 2 1.2 2.1 2.9l-.1.1zm11.5-.2c-2.3-.7-2.6-1-2.6-1.6s.5-1 1.6-1c1 0 2 .4 3 1l1.4-2.2c-1.2-1-2.8-1.6-4.6-1.6-3.2 0-5.2 1.7-5.2 3.9 0 2 1.2 3.2 3.7 4 2.3.7 2.7.9 2.7 1.8 0 .7-.7 1.2-1.9 1.2s-2.4-.5-3.3-1.3l-1.9 2.1c1.2 1.1 3.1 1.9 5.3 1.9 3.1 0 5.6-1.6 5.6-4.2.1-2.2-1.3-3.3-3.8-4zM100.2 1.2l-.1 6.2c-.7-.7-1.8-1.2-2.9-1.2-3.3 0-5.2 2.8-5.2 6.7 0 4.1 1.6 6.8 4.8 6.8 1.7 0 2.9-.8 3.6-1.9l.2 1.5h3.3V2.1h-.5c-1.3 0-2.4-.3-3.2-.9zm-.1 14.3c-.6 1-1.3 1.4-2.2 1.4-1.2 0-2.1-.8-2.1-4 0-2.8 1-4 2.3-4 .8 0 1.4.4 2 1.1v5.5z"></path><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="61.626" y1="-811.88" x2="65.945" y2="-811.88" gradientTransform="matrix(1 0 0 -1 0 -794.18)"><stop offset="0" stop-color="gray"></stop><stop offset="1" stop-color="#FFADA8"></stop></linearGradient><path fill="url(#a)" d="M63.8 15.5c-1.2 0-2.2 1-2.2 2.2s1 2.2 2.2 2.2 2.2-1 2.2-2.2c-.1-1.2-1-2.2-2.2-2.2z"></path></svg>
+            </a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
 
 </body>
 </html>

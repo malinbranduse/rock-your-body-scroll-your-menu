@@ -1,0 +1,109 @@
+html, body, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    padding-top: 80px;
+}
+
+body, p {
+    color: #424242;
+}
+
+h1, h2, h3 {
+    color: #0d355a;
+    font-family: 'Lora', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    box-shadow: inset 0 -1px 0 #3eb0ef;
+}
+
+path {
+    transition: .2s ease;
+}
+
+.cf:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background: #69e8db; }
+    .header .wrapper {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%; }
+
+.code {
+    font-weight: 400;
+    font-family: monospace,monospace;
+    padding: 0 8px;
+    background: #e0e0e0;
+}
+
+.content {
+    padding: 50px 0;
+}
+
+.footer {
+    background: #c1c1bc;
+    padding: 25px 0 60px;
+}
+
+.footer p {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 18px;
+    color: #616161;
+}
+
+.footer .coffee {
+    font-size: 26px;
+    margin: 0 5px;
+}
+
+.footer p svg {
+    width: 22px;
+    height: 20px;
+    margin: 0 7px;
+}
+
+.footer p a {
+    display: flex;
+    box-shadow: none; }
+
+    .footer p a:hover svg path[fill="#424242"] {
+        fill: #fff; }
+
+.footer p a svg {
+    width: 120px;
+    height: 100%;
+}
